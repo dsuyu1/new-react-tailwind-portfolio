@@ -12,7 +12,7 @@ export const AboutSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold">
-              Who I Am
+              Who Am I?
             </h3>
 
             <p className="text-muted-foreground">
@@ -22,7 +22,9 @@ export const AboutSection = () => {
             </p>
 
             <p className="text-muted-foreground">
-             In a world that 
+             In a world that is constantly evolving with the birth of new threats,
+             my goal is to constantly educate myself so that I can contribute
+             to a safer cyber world for the future.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
