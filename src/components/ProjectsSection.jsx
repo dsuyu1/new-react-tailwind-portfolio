@@ -11,16 +11,6 @@ const projects = [
     githubUrl: "#",
   },
 
-  {
-    id: 2,
-    title: "SOAR EDR Lab",
-    description: "A beautiful landing page app using React and Tailwind.",
-    image: "/projects/project1.png",
-    tags: ["React", "TailwindCSS", "Supabase"],
-    demoUrl: "#",
-    githubUrl: "#",
-  },
-
 ];
 
 
