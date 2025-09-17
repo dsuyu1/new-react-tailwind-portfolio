@@ -3,34 +3,26 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "SaaS Landing Page",
+    title: "SOAR EDR Lab",
     description: "A beautiful landing page app using React and Tailwind.",
     image: "/projects/project1.png",
     tags: ["React", "TailwindCSS", "Supabase"],
     demoUrl: "#",
     githubUrl: "#",
   },
+
   {
     id: 2,
-    title: "Orbit Analytics Dashboard",
-    description:
-      "Interactive analytics dashboard with data visualization and filtering capabilities.",
-    image: "/projects/project2.png",
-    tags: ["TypeScript", "D3.js", "Next.js"],
+    title: "SOAR EDR Lab",
+    description: "A beautiful landing page app using React and Tailwind.",
+    image: "/projects/project1.png",
+    tags: ["React", "TailwindCSS", "Supabase"],
     demoUrl: "#",
     githubUrl: "#",
   },
-  {
-    id: 3,
-    title: "E-commerce Platform",
-    description:
-      "Full-featured e-commerce platform with user authentication and payment processing.",
-    image: "/projects/project3.png",
-    tags: ["React", "Node.js", "Stripe"],
-    demoUrl: "#",
-    githubUrl: "#",
-  },
+
 ];
+
 
 export const ProjectsSection = () => {
   return (
@@ -42,8 +34,7 @@ export const ProjectsSection = () => {
         </h2>
 
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Here are some of my recent projects. Each project focuses on a different
-          domain
+          {/* Here are some of my recent projects. */}
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
