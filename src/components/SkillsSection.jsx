@@ -2,42 +2,47 @@ import { useState } from "react";
 import { cn } from "@/lib/utils";
 
 const skills = [
+  // Defensive Skills
   {
-    name: "Azure",
-    tags: ["Cloud Security", "SIEM", "Defender"],
-    category: "Defensive",
-  },
-  // Defensive
-  {
-    name: "Wireshark",
-    tags: ["Packet Analysis", "Network Forensics"],
+    name: "Cloud Security",
+    tags: ["Azure", "Defender"],
     category: "Defensive",
   },
   {
-    name: "Elastic",
-    tags: ["SIEM", "Log Management"],
+    name: "Packet Analysis",
+    tags: ["Wireshark"],
     category: "Defensive",
   },
   {
-    name: "Wazuh",
-    tags: ["SIEM", "Endpoint Security"],
+    name: "Log Management",
+    tags: ["Elastic"],
     category: "Defensive",
   },
   {
-    name: "Tines",
-    tags: ["SOAR", "Automation"],
+    name: "Endpoint Security",
+    tags: ["Wazuh"],
     category: "Defensive",
   },
   {
-    name: "LimaCharlie",
-    tags: ["EDR", "Detection & Response"],
+    name: "Automation",
+    tags: ["Tines"],
+    category: "Defensive",
+  },
+  {
+    name: "Detection & Response",
+    tags: ["LimaCharlie"],
     category: "Defensive",
   },
 
-  // Offensive
+  // Offensive Skills
   {
-    name: "Empire",
-    tags: ["C2 Framework", "Post-Exploitation"],
+    name: "Post-Exploitation",
+    tags: ["Empire"],
+    category: "Offensive",
+  },
+  {
+    name: "C2 Frameworks",
+    tags: ["Empire"],
     category: "Offensive",
   },
 ];
