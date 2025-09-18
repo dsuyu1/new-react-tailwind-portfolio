@@ -4,13 +4,21 @@ const projects = [
   {
     id: 1,
     title: "SOAR EDR Lab",
-    description: "A beautiful landing page app using React and Tailwind.",
-    image: "/projects/project1.png",
-    tags: ["React", "TailwindCSS", "Supabase"],
-    demoUrl: "#",
-    githubUrl: "#",
+    description: "Used Tines (SOAR) and LimaCharlie (EDR) to automate security workflows. ",
+    image: "/projects/SOAR-EDR-Storyboard.png",
+    tags: ["LimeCharlie", "Tines", "Slack"],
+  demoUrl: "/projects/SOAR-EDR-Storyboard.png",
+    githubUrl: "https://github.com/dsuyu1/SOAR-EDR-Project",
   },
-
+  {
+    id: 2,
+    title: "30-Day SOC Challenge",
+    description: "I follow Steven from MyDFIR and learn use ELK, Sysmon, osTicket, and Mythic C2 to simulate a Security Operations Center (SOC) environment.",
+    image: "/projects/soc.jpg",
+    tags: ["Elastic", "Sysmon", "osTicket", "Mythic C2"],
+    demoUrl: "#",
+    githubUrl: "https://github.com/dsuyu1/30-Day-SOC-Analyst-Challenge",
+  },
 ];
 
 
@@ -33,16 +41,17 @@ export const ProjectsSection = () => {
               key={key}
               className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
             >
-              <div className="h-48 overflow-hidden">
+              <div className="overflow-hidden">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="w-full object-contain transition-transform duration-500 group-hover:scale-105"
+                  style={{ height: 'auto', maxHeight: '220px', margin: '0 auto', display: 'block' }}
                 />
               </div>
 
               <div className="p-6">
-                <div className="flex flex-wrap gap-2 mb-4">
+                <div className="flex flex-wrap gap-2 mb-4 justify-center">
                   {project.tags.map((tag) => (
                     <span className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground">
                       {tag}
@@ -81,9 +90,9 @@ export const ProjectsSection = () => {
           <a
             className="cosmic-button w-fit flex items-center mx-auto gap-2"
             target="_blank"
-            href="https://github.com/machadop1407"
+            href="https://www.linkedin.com/in/dsuyu/"
           >
-            Check My Github <ArrowRight size={16} />
+            Check My LinkedIn <ArrowRight size={16} />
           </a>
         </div>
       </div>

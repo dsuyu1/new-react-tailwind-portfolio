@@ -2,6 +2,11 @@ import { useState } from "react";
 import { cn } from "@/lib/utils";
 
 const skills = [
+  {
+    name: "Azure",
+    tags: ["Cloud Security", "SIEM", "Defender"],
+    category: "Defensive",
+  },
   // Defensive
   {
     name: "Wireshark",
