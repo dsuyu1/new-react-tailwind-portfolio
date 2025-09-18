@@ -5,11 +5,12 @@ import { ThemeToggle } from "@/components/ThemeToggle.jsx"; // adjust path if ne
 
 
 const navItems = [
-  { name: "Home", href: "#hero" },      
-    { name: "About", href: "#about" },
+        { name: "Home", href: "#hero" },
+        { name: "About", href: "#about" },
         { name: "Projects", href: "#projects" },
-          { name: "Contact", href: "#contact" },
-          ];
+        { name: "Blog", href: "/articles" },
+        { name: "Contact", href: "#contact" },
+];
 
           export const Navbar = () => {
             const [isScrolled, setIsScrolled] = useState(false);
@@ -42,15 +43,21 @@ const navItems = [
 
                                                                                                                                                                           {/* desktop nav */}
                                                                                                                                                                           <div className="hidden md:flex items-center space-x-6">
-                                                                                                                                                                            {navItems.map((item) => (
-                                                                                                                                                                                <a
-                                                                                                                                                                                      key={item.name}
-                                                                                                                                                                                            href={item.href}
-                                                                                                                                                                                                  className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                                                                                                                                                                                                      >
-                                                                                                                                                                                                            {item.name}
-                                                                                                                                                                                                                </a>
-                                                                                                                                                                                                                  ))}
+                                                                                                                                                                                                                                    {navItems.map((item) => (
+                                                                                                                                                                                                                                          <a
+                                                                                                                                                                                                                                                  key={item.name}
+                                                                                                                                                                                                                                                  href={item.href}
+                                                                                                                                                                                                                                                  className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                                                                                                                                                                                                                                                  onClick={e => {
+                                                                                                                                                                                                                                                    if (item.href.startsWith("#")) {
+                                                                                                                                                                                                                                                        e.preventDefault();
+                                                                                                                                                                                                                                                        window.location.href = "/" + item.href;
+                                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                                                  }}
+                                                                                                                                                                                                                                          >
+                                                                                                                                                                                                                                                  {item.name}
+                                                                                                                                                                                                                                          </a>
+                                                                                                                                                                                                                                    ))}
 
                                                                                                                                                                                                                     {/* Theme toggle on the far right */}
                                                                                                                                                                                                                       <ThemeToggle />
