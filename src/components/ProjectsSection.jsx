@@ -87,7 +87,7 @@ export const ProjectsSection = () => {
 
         <div className="text-center mt-12">
           <a
-            className="cosmic-button w-fit flex items-center mx-auto gap-2"
+            className="cosmic-button w-fit flex items-center mx-auto gap-2 card-hover shadow-xs transition-transform duration-300"
             target="_blank"
             href="https://www.linkedin.com/in/dsuyu/"
           >

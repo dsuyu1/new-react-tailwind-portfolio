@@ -27,19 +27,19 @@ export const Footer = () => {
 
   return (
     <footer
-  className={`py-4 px-2 bg-card border-t border-border flex flex-wrap justify-between items-center w-full fixed bottom-0 left-0 z-30 transition-opacity ${showFooter && visible ? 'opacity-100 duration-1000' : 'opacity-0 duration-500 pointer-events-none'}`}
+      className={`py-2 px-1 bg-card border-t border-border flex flex-wrap justify-between items-center w-full fixed bottom-0 left-0 z-30 transition-opacity ${showFooter && visible ? 'opacity-100 duration-1000' : 'opacity-0 duration-500 pointer-events-none'}`}
       style={{
         transitionProperty: 'opacity',
       }}
     >
-      <p className="text-sm text-muted-foreground">
-        &copy; {new Date().getFullYear()} All rights reserved.
+      <p className="text-xs text-muted-foreground">
+         &copy; {new Date().getFullYear()}  All rights reserved.
       </p>
       <a
         href="#hero"
-        className="p-2 rounded-full bg-primary/10 hover:bg-primary/20 text-primary transition-colors"
+        className="p-1 rounded-full bg-primary/10 hover:bg-primary/20 text-primary transition-colors"
       >
-        <ArrowUp size={20} />
+        <ArrowUp size={16} />
       </a>
     </footer>
   );

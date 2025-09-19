@@ -3,7 +3,6 @@ import {
   Linkedin,
   Mail,
   MapPin,
-  Phone,
   Send,
   Twitch,
   Twitter,
@@ -60,20 +59,6 @@ export const ContactSection = () => {
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
                     damian.villarreal01@utrgv.edu
-                  </a>
-                </div>
-              </div>
-              <div className="flex items-start space-x-4">
-                <div className="p-3 rounded-full bg-primary/10">
-                  <Phone className="h-6 w-6 text-primary" />{" "}
-                </div>
-                <div>
-                    <h4 className="font-medium text-left"> Phone</h4>
-                  <a
-                    href="tel:+19567320612"
-                    className="text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    +1 (956) 732-0612
                   </a>
                 </div>
               </div>
