@@ -1,4 +1,4 @@
-import { ArrowRight, ExternalLink, Github } from "lucide-react";
+import { ArrowRight, Linkedin, Github } from "lucide-react";
 
 const projects = [
   {
@@ -7,7 +7,7 @@ const projects = [
     description: "Used Tines (SOAR) and LimaCharlie (EDR) to automate security workflows. ",
     image: "/projects/SOAR-EDR-Storyboard.png",
     tags: ["LimeCharlie", "Tines", "Slack"],
-  demoUrl: "/projects/SOAR-EDR-Storyboard.png",
+  demoUrl: "https://lnkd.in/p/g7JMgrSw",
     githubUrl: "https://github.com/dsuyu1/SOAR-EDR-Project",
   },
   {
@@ -16,7 +16,7 @@ const projects = [
     description: "I follow Steven from MyDFIR and learn use ELK, Sysmon, osTicket, and Mythic C2 to simulate a Security Operations Center (SOC) environment.",
     image: "/projects/elastic.png",
     tags: ["Elastic", "Sysmon", "osTicket", "Mythic C2"],
-    demoUrl: "#",
+    demoUrl: "https://lnkd.in/p/g8MbJUxC",
     githubUrl: "https://github.com/dsuyu1/30-Day-SOC-Analyst-Challenge",
   },
 ];
@@ -31,7 +31,7 @@ export const ProjectsSection = () => {
         </h2>
 
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          {/* Here are some of my recent projects. */}
+           {/* add description here  */}
         </p>
 
   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center items-center">
@@ -69,7 +69,7 @@ export const ProjectsSection = () => {
                       target="_blank"
                       className="text-foreground/80 hover:text-primary transition-colors duration-300"
                     >
-                      <ExternalLink size={20} />
+                      <Linkedin size={20} />
                     </a>
                     <a
                       href={project.githubUrl}
