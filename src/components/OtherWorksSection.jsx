@@ -2,13 +2,13 @@ import React from "react";
 
 const otherWorks = [
   {
-    title: "Conference Presentation",
-    description: "Presented at XYZ Conference on cybersecurity trends.",
+    title: "Conference: Empire C2 implants, IoCs, and Detections",
+    description: "Presented on Empire C2 implants, analyzed how they work, identified their indicators of compromise (IoCs), and built real-world detections at the 6th Annual BSides RGV Cybersecurity Conference.",
     articleId: "1",
   },
   {
-    title: "Guest Lecture",
-    description: "Gave a guest lecture at ABC University about cloud security.",
+    title: "Research: Zero-Trust Edge Camera for Privacy-Preserving Surveillance",
+    description: "The goal of our research is to find a more modern solution to CCTV that enables privacy-preserving surveillance that aligns with GDPR/HIPAA principles while staying real-time and scalable for smart cities, healthcare, and consumer security.",
     articleId: "2",
   },
 ];
