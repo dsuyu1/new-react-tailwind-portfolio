@@ -1,3 +1,11 @@
+/* Hide scrollbars globally but allow scrolling */
+body, html {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+body::-webkit-scrollbar, html::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
 /* Navbar button ripple effect */
 .navbar-ripple {
   position: absolute;
