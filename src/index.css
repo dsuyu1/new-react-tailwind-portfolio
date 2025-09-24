@@ -1,3 +1,22 @@
+/* Navbar button ripple effect */
+.navbar-ripple {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: rgba(139,92,246,0.15);
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(0.2);
+  animation: navbar-ripple 0.5s linear;
+  z-index: 0;
+}
+
+@keyframes navbar-ripple {
+  to {
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 0;
+  }
+}
 @import "tailwindcss";
 
 @theme {
