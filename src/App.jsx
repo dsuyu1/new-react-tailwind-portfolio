@@ -4,10 +4,7 @@ import { NotFound } from "./pages/NotFound";
 import { ArticlesPage } from "./pages/Articles";
 import { Toaster } from "@/components/ui/toaster";
 import Blog from "./pages/Blog";
-import FeaturedArticle from "./pages/blog/featured-article";
-import ReactBasics from "./pages/blog/react-basics";
-import TailwindTips from "./pages/blog/tailwind-tips";
-import ViteDeploy from "./pages/blog/vite-deploy";
+import TPOTArticle from "./pages/blog/tpot-writeup";
 
 function App() {
   return (
@@ -18,10 +15,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="articles" element={<ArticlesPage />} />
           <Route path="blog" element={<Blog />} />
-          <Route path="blog/featured-article" element={<FeaturedArticle />} />
-          <Route path="blog/react-basics" element={<ReactBasics />} />
-          <Route path="blog/tailwind-tips" element={<TailwindTips />} />
-          <Route path="blog/vite-deploy" element={<ViteDeploy />} />
+          <Route path="blog/tpot-writeup" element={<TPOTArticle />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

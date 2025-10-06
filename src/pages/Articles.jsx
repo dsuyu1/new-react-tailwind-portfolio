@@ -9,6 +9,9 @@ const articles = [
     title: "Getting Started with T-Pot: A Honeypot for Threat Analysis",
     date: "October 6, 2025",
     content: `In this series, I'll be using T-Pot, an open-source honeypot platform, to set up a honeypot environment for threat analysis. In this section, I'll cover installation, configuration, and how to analyze the data collected to understand attacker behavior and tactics.`,
+    url: "/blog/tpot-writeup",
+    image: "/articles/tpot_thumbnail.png",
+    tags: ["T-Pot"],
   },
 ];
 
@@ -26,24 +29,30 @@ export const ArticlesPage = () => {
               {articles.map((article) => (
                 <a
                   key={article.id}
-                  href={`#article-${article.id}`}
+                  href={article.url}
                   className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover transition duration-300 hover:shadow-lg hover:-translate-y-1 flex flex-col"
                   style={{ textDecoration: 'none' }}
                 >
                   <div className="w-full h-40 flex-shrink-0 overflow-hidden bg-gray-200 flex items-center justify-center">
                     <img
-                      src="public/articles/tpot_thumbnail.png"
+                      src={article.image}
                       alt="TPOT Thumbnail"
                       className="object-cover w-full h-full"
                     />
                   </div>
                   <div className="p-6 flex flex-col flex-1">
-                    <a
-                      href={`/articles/${article.id}`}
-                      className="text-xl font-semibold mb-2 text-primary hover:underline"
+                    <span
+                      className="text-xl font-semibold mb-2 text-primary group-hover:underline cursor-pointer text-center"
                     >
                       {article.title}
-                    </a>
+                    </span>
+                    <div className="flex flex-wrap gap-2 mb-4 justify-center">
+                      {article.tags && article.tags.map(tag => (
+                        <span key={tag} className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground">
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
                     <p className="text-xs text-muted-foreground mb-4">{article.date}</p>
                     <p className="text-foreground text-sm mb-2">{article.content}</p>
                   </div>
