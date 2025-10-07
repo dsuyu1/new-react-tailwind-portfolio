@@ -31,7 +31,7 @@ export const ProjectsSection = () => {
         </h2>
 
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Here are some of my most notable and relevant projects as they relate to cybersecurity.
+          I define my featured projects as works that utilize two or more technologies to solve a problem or create something new. Here are some of my recent projects.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center items-center">
